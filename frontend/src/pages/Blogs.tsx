@@ -27,7 +27,7 @@ const Blogs = () => {
             authorName={blog.author.name || "Anonymous"}
             title={blog.title}
             content={blog.content}
-            publishDate={blog.publishedDate}
+            publishDate={blog.publishedDate || ""}
             
             /> )}
 

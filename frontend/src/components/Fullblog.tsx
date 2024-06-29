@@ -1,5 +1,4 @@
 import { Blog } from "../hooks"
-import { Appbar } from "./Appbar"
 import { Avatar } from "./Blogcard"
 
 export const FullBlog = ({ blog }: {blog: Blog}) => {
@@ -18,6 +17,7 @@ export const FullBlog = ({ blog }: {blog: Blog}) => {
                     </div>
                 </div>
                 <div className="col-span-4">
+
                     <div className="text-slate-600 text-lg">
                         Author
                     </div>

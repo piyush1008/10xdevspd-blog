@@ -6,9 +6,9 @@ import { useParams } from "react-router-dom";
 const Blog = () => {
   const {id}=useParams();
   console.log(id);
-  const{loading,blog}=useBlog({id:id});
+  const{loading,blog}=useBlog({id:id ||""});
   
-  if(loading) {
+  if(loading || !blog) {
     return <div className="h-screen flex flex-col justify-center">
       <div className="flex justify-center">
         <Spinner />
